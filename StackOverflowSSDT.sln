@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "stackoverflow.stackexchange
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseUnitTests", "DatabaseUnitTests\DatabaseUnitTests.csproj", "{0893B75D-48A4-4510-A237-BA9058482D8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRules", "CustomRules\CustomRules.csproj", "{A3974B4E-8C45-49E4-AAED-98692A904849}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{0893B75D-48A4-4510-A237-BA9058482D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0893B75D-48A4-4510-A237-BA9058482D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0893B75D-48A4-4510-A237-BA9058482D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3974B4E-8C45-49E4-AAED-98692A904849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3974B4E-8C45-49E4-AAED-98692A904849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3974B4E-8C45-49E4-AAED-98692A904849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3974B4E-8C45-49E4-AAED-98692A904849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
