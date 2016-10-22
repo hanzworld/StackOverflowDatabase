@@ -27,3 +27,49 @@ GRANT INSERT
     ON OBJECT::[dbo].[Tag] TO [StackExchangeUser_Role]
     AS [dbo];
 
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'Unique identifier for the Tag, for machine use only',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Tag',
+    @level2type = N'COLUMN',
+    @level2name = N'Id'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'The identifier of the Post to which this tag links, for machine use only. This should refer to a Post of type TagWikiExcerpt',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Tag',
+    @level2type = N'COLUMN',
+    @level2name = N'ExcerptPostId'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'The identifier of the Post to which this Comment pertains, for machine use only. This should refer to a Post of type TagWiki',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Tag',
+    @level2type = N'COLUMN',
+    @level2name = N'WikiPostId'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'The freetext name of the tag, ideally not duplicated. This should be what is shown to users. Please note this content is not encoded, so sure to encode your output.',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Tag',
+    @level2type = N'COLUMN',
+    @level2name = N'TagName'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'The total number of times this tag has been used across the site. This is a denormalised column.',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Tag',
+    @level2type = N'COLUMN',
+    @level2name = N'Count'

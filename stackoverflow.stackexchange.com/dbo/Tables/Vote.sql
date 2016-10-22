@@ -20,3 +20,40 @@ GRANT INSERT
     ON OBJECT::[dbo].[Vote] TO [StackExchangeUser_Role]
     AS [dbo];
 
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'Unique identifier for the Vote, for machine use only',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Vote',
+    @level2type = N'COLUMN',
+    @level2name = N'Id'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'The identifier of the Post to which this Vote pertains, for machine use only',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Vote',
+    @level2type = N'COLUMN',
+    @level2name = N'PostId'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'The identifier of the type of Vote made on this Post, for machine use only',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Vote',
+    @level2type = N'COLUMN',
+    @level2name = N'VoteTypeId'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'The date and time this vote was made by the user, in UTC',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Vote',
+    @level2type = N'COLUMN',
+    @level2name = N'CreationDateUTC'
