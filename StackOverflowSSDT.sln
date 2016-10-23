@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "stackoverflow.stackexchange
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedDeploys", "AutomatedDeploys\AutomatedDeploys.csproj", "{A892A139-24D0-405A-9CDC-DBDB65F2FAEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildContributor-Documentation", "BuildContributor-Documentation\BuildContributor-Documentation.csproj", "{5F2B7DF3-9AE2-4998-B654-B9619DC120E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{A892A139-24D0-405A-9CDC-DBDB65F2FAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A892A139-24D0-405A-9CDC-DBDB65F2FAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A892A139-24D0-405A-9CDC-DBDB65F2FAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2B7DF3-9AE2-4998-B654-B9619DC120E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2B7DF3-9AE2-4998-B654-B9619DC120E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2B7DF3-9AE2-4998-B654-B9619DC120E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2B7DF3-9AE2-4998-B654-B9619DC120E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

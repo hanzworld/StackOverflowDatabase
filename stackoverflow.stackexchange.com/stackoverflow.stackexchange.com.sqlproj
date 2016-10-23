@@ -105,6 +105,12 @@
   </PropertyGroup>
   <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <PropertyGroup>
+    <BuildContributors>$(BuildContributors);StackOverflow.Documentation</BuildContributors>
+    <ContributorArguments Condition="'$(Configuration)' == 'Debug'">
+      $(ContributorArguments);
+    </ContributorArguments>
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
